@@ -33,3 +33,12 @@ print ('Чи можна зробити покупку? : $youCanBuy');
 print ('Чи потрібно почекати? : $needToWait');  
 
 } //
+void fourthTask () {
+  int temperature = 27;
+
+  String comfort = temperature > 25 ? 'Тепло' : 'Прохолодно';
+  String extreme = temperature < 10 ? 'Дуже холодно' : '';
+
+  print('Погода: $comfort');
+  print(extreme);
+}  //
