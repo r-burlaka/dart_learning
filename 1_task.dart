@@ -76,3 +76,43 @@ void sixthTask () {
      print ('Ваш результат : ${feedback}'); 
 
 } //
+void seventhTask() {
+  int dayNumber = 6;
+
+  String dayName = '';
+  bool isWeekend = false;
+
+  switch (dayNumber) {
+    case 1:
+      dayName = 'Понеділок';
+      break;
+    case 2:
+      dayName = 'Вівторок';
+      break;
+    case 3:
+      dayName = 'Середа';
+      break;
+    case 4:
+      dayName = 'Четвер';
+      break;
+    case 5:
+      dayName = 'Пʼятниця';
+      break;
+    case 6:
+      dayName = 'Субота';
+      isWeekend = true;
+      break;
+    case 7:
+      dayName = 'Неділя';
+      isWeekend = true;
+      break;
+    default:
+      dayName = 'Невірний номер дня';
+  }
+
+  print('Сьогодні: $dayName');
+
+  if (isWeekend) {
+    print('Вихідний день 🎉');
+  }
+} //
