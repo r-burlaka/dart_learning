@@ -11,3 +11,25 @@ void zavdannyaDva() {
   print('number < 100 : ${number < 100}');
   print('number divides by 5 without remainder : ${number % 5 == 0}');
 } //
+void thirdTask () { 
+
+bool hasMoney = true; 
+bool isStoreOpen = true; 
+
+print ('Можна зробити покупку : ${hasMoney && isStoreOpen}'); 
+print ('Потрібно почекати : ${!hasMoney || !isStoreOpen}');  
+
+} //  
+
+void thirdTaskImproved () { 
+
+bool hasMoney = true; 
+bool isStoreOpen = true; 
+
+bool youCanBuy = (hasMoney && isStoreOpen);
+bool needToWait = (!hasMoney || !isStoreOpen);
+
+print ('Чи можна зробити покупку? : $youCanBuy'); 
+print ('Чи потрібно почекати? : $needToWait');  
+
+} //
