@@ -137,3 +137,15 @@ void taskEight() {
   }
   print('Сума : $sum');
 } //
+void taskNine() {
+  int i = 10;
+
+  while (i >= 0) {
+    if (i % 2 == 0) {
+      print('Парне число: $i');
+    } else {
+      print('Непарне число: $i');
+    }
+    i -= 1;
+  }
+}//
