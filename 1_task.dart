@@ -57,3 +57,22 @@ score ~/ totalQuestions;
 print ('Остаточний результат : $score');
 
 } //
+void sixthTask () { 
+
+    int examScore = 56; 
+    String feedback = ''; 
+
+    if (examScore <20) { 
+       feedback = 'Повторити курс';} 
+     else if (examScore<60) { 
+       feedback = 'Не здано';} 
+     else if (examScore >=60 && examScore<=74) { 
+       feedback = 'Задовільно';} 
+     else if (examScore >= 75 && examScore <= 90) { 
+       feedback = 'Добре';} 
+     else if (examScore >= 90) { 
+       feedback = 'Відмінно';} 
+   
+     print ('Ваш результат : ${feedback}'); 
+
+} //
